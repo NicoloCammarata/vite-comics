@@ -1,12 +1,63 @@
 <script >
 export default {
     data() {
-        return 
-    },
-  methods:{
+        return {
+            mainMenu: [
+                {
+                    label: 'Caracters',
+                    link: '#',
+                    active: false,
+                },
+                {
+                    label: 'Comics',
+                    link: '#',
+                    active: true,
+                },
+                {
+                    label: 'Movies',
+                    link: '#',
+                    active: false,
+                },
+                {
+                    label: 'Tv',
+                    link: '#',
+                    active: false,
+                },
+                {
+                    label: 'Games',
+                    link: '#',
+                    active: false,
+                },
+                {
+                    label: 'Collectibles',
+                    link: '#',
+                    active: false,
+                },
+                {
+                    label: 'Videos',
+                    link: '#',
+                    active: false,
+                },
+                {
+                    label: 'News',
+                    link: '#',
+                    active: false,
+                },
+                {
+                    label: 'Shop',
+                    link: '#',
+                    active: false,
+                },
+            ]
 
-    }, 
+        }
+    },
+    methods:{
+        
+
+    },
 }
+
 </script>
 
 <template>
@@ -20,6 +71,12 @@ export default {
 
             </div>
             <ul class="link">
+                <li @click="menu.active = true" :class="{
+                    'active':menu.active
+                }" v-for="(menu, i) in mainMenu">
+                    <a :href="menu.link">{{ menu.label }}</a>
+
+                </li>
 
             </ul>
 

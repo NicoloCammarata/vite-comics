@@ -12,6 +12,11 @@ export default {
 <template>
     <main>
         <div class="top-main">
+            <div>
+                <a href="#"><strong>
+                    __> Content goes here 
+                </strong></a>
+            </div>
 
         </div>
         <div class="mid-main">
