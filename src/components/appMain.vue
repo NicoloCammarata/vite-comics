@@ -11,7 +11,15 @@ export default {
 
 <template>
     <main>
-        main
+        <div class="top-main">
+
+        </div>
+        <div class="mid-main">
+
+        </div>
+        <div class="low-main">
+
+        </div>
     </main>
   
 </template>
