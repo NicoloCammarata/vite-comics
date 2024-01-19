@@ -1,0 +1,9 @@
+
+@use "partials/variabiles.scss" as *;
+@use "partials/mixins.scss" as *;
+
+h1 {
+    color: red;
+    text-decoration: line-through;
+    text-align: center;
+}
