@@ -2,7 +2,7 @@
 export default {
     data() {
         return {
-            mainMenu: [
+            headerMenu: [
                 {
                     label: 'Caracters',
                     link: '#',
@@ -73,7 +73,7 @@ export default {
             <ul class="link">
                 <li @click="menu.active = true" :class="{
                     'active':menu.active
-                }" v-for="(menu, i) in mainMenu">
+                }" v-for="(menu, i) in headerMenu">
                     <a :href="menu.link">{{ menu.label }}</a>
 
                 </li>
